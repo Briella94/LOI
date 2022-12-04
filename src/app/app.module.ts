@@ -10,9 +10,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+
 import { ScheduledInspectionsComponent } from './scheduled-inspections/scheduled-inspections.component';
 import { CompletedInspectionsComponent } from './completed-inspections/completed-inspections.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +33,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatToolbarModule,
     MatIconModule,
     MatTabsModule,
-    MatTableModule
+    MatTableModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [Home]
