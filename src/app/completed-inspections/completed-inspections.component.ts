@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { default as dataSource } from "../data.json";
 
 @Component({
   selector: 'app-completed-inspections',
@@ -11,6 +10,8 @@ export class CompletedInspectionsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
+
   }
 
 }
