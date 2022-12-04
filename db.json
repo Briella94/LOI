@@ -1,46 +1,45 @@
 {
-  "inspections":
-    [
-      {
-        "inspectionLocation": "Adres 20, 1234AB Dordrecht",
-        "inspectionDate": "2022-12-04T18:25:43.511Z",
-        "damages": [
-          {
-            "damageType": "Oppervlakkige schades",
-            "damageLocation": "Op de muur in de hal",
-            "damageNew": "Ja",
-            "damageDate": "2022-12-04T18:25:43.511Z",
-            "damageActionRequired": "No",
-            "damageDescription": "N.v.t."
-          }
-        ],
-        "deferrences": [
-          {
-            "deferrenceType": "Oppervlakkige schade",
-            "deferrenceLocation": "Op de muur in de hal",
-            "deferrenceActionRequired": "No",
-            "deferrenceCostIndication": "10.000"
-          }
-        ],
-        "installations": [
-          {
-            "installationType": "Oppervlakkige schade",
-            "installationLocation": "Op de muur in de hal",
-            "installationReports": "No",
-            "installationTestingProcedure": "10.000",
-            "installationApproved": "Ja",
-            "installationRemark": "Niks bijzonders"
-          }
-        ],
-        "modifications": [
-          {
-            "modificationDescription": "Niks bijzonders",
-            "modificationLocation": "Op de muur in de hal",
-            "modificationDocumentation": "10.000",
-            "modificationBy": "No",
-            "modificationActionRequired": "Ja",
-            "modificationRemark": "Ja"
-          }
+  "inspections": [
+    {
+      "inspectionLocation": "Adres 20, 1234AB Dordrecht",
+      "inspectionDate": "2022-12-04T18:25:43.511Z",
+      "damages": [
+        {
+          "damageType": "Oppervlakkige schade",
+          "damageLocation": "Op de muur in de hal",
+          "damageNew": "Ja",
+          "damageDate": "2022-12-04T18:25:43.511Z",
+          "damageActionRequired": "No",
+          "damageDescription": "N.v.t."
+        }
+      ],
+      "deferrences": [
+        {
+          "deferrenceType": "Oppervlakkige schade",
+          "deferrenceLocation": "Op de muur in de hal",
+          "deferrenceActionRequired": "No",
+          "deferrenceCostIndication": "10.000"
+        }
+      ],
+      "installations": [
+        {
+          "installationType": "Oppervlakkige schade",
+          "installationLocation": "Op de muur in de hal",
+          "installationReports": "No",
+          "installationTestingProcedure": "10.000",
+          "installationApproved": "Ja",
+          "installationRemark": "Niks bijzonders"
+        }
+      ],
+      "modifications": [
+        {
+          "modificationDescription": "Niks bijzonders",
+          "modificationLocation": "Op de muur in de hal",
+          "modificationDocumentation": "10.000",
+          "modificationBy": "No",
+          "modificationActionRequired": "Ja",
+          "modificationRemark": "Ja"
+        }
       ]
     }
   ]
