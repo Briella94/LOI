@@ -1,6 +1,7 @@
 {
   "inspections": [
     {
+      "inspectionId": "1",
       "inspectionLocation": "Adres 20, 1234AB Dordrecht",
       "inspectionDate": "2022-12-04T18:25:43.511Z",
       "damages": [
@@ -43,6 +44,7 @@
       ]
     },
     {
+      "inspectionId": "2",
       "inspectionLocation": "Adres 33, 1234AB Dordrecht",
       "inspectionDate": "2022-12-04T18:25:43.511Z",
       "damages": [
