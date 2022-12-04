@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+/* font-family: 'Electrolize', sans-serif; */
+
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow: hidden;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background-color: #0eb1a5;
+  color: white;
+  font-family: 'Electrolize', sans-serif;
+  font-size: 24px;
+}
+
+.header img {
+  margin: 0 16px;
+}
+
+.header .material-icons {
+  font-size: 33px;
+  margin-top: 5px;
+  margin-right: 25px;
+  overflow: visible;
+  color: white;
+}
+
+.header .settings-notifications-logo:hover {
+  color: rgb(19, 38, 41);
+}
+
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  margin: 20px auto;
+  width: 100%;
+  height: 70vh;
+  background-color:#fff;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.tabbar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  max-height: 120px;
+  width: 100%;
+  background-color: #0eb1a5;
+  color: white;
+  text-align: center;
+}
+
+.mat-tab-label {
+  width: 33%;
+}
+
+/* Responsive media */
+@media only screen and (min-width: 320px) {
+  .header img {
+    margin: 0 8px;
+  }
+  
+  .card {
+    font-size: 20px;
+    color: rgb(19, 38, 41);
+  }
+
+  .card span {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .card {
+    font-size: 30px;
+    color: rgb(19, 38, 41);
+  }
+
+  .card span {
+    font-size: 175px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    font-size: 40px;
+    color: rgb(19, 38, 41);
+  }
+
+  .card span {
+    font-size: 190px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card {
+    font-size: 50px;
+    color: rgb(19, 38, 41);
+    
+  }
+
+  .card span {
+    font-size: 220px;
+  }
+}

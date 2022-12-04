@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.dashboard.html',
-  styleUrls: ['./app.dashboard.css']
+  templateUrl: './app.home.html',
+  styleUrls: ['./app.home.css']
 })
-export class Dashboard {
+
+export class Home {
   title = 'my-angular-app';
 }

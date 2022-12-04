@@ -1,0 +1,55 @@
+<head>
+  <link rel="stylesheet" href="app.home.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+
+<body>
+
+  <!-- Header -->
+<mat-toolbar class="header">
+  <img width="40" alt="Real Estate Care logo" src="..\assets\Logo green.PNG"/>
+  <span id="rec-logo">Real Estate Care</span>
+  <div class="spacer"></div>
+  <a aria-label="Settings" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Settings">
+    <mat-icon class="settings-notifications-logo">settings</mat-icon>
+  </a>
+  <a aria-label="Notifications" target="_blank" rel="noopener" href="https://youtube.com/angular" title="Notifications">
+    <mat-icon class="settings-notifications-logo">notifications</mat-icon>
+  </a>
+</mat-toolbar>
+
+<div class="content" role="main">
+
+  <!-- Loaded view -->
+  <router-outlet></router-outlet>
+  <a routerLink="/completed-inspections-component" routerLinkActive="active" ariaCurrentWhenActive="page">Tekst</a>
+
+  <!-- Footer -->
+  <div class="tabbar">
+    <mat-tab-group>
+      <mat-tab class="tab">
+        <ng-template mat-tab-label >
+          <button mat-icon-button routerLink="/dashboard-component">Dashboard</button>
+        </ng-template>
+      </mat-tab>
+      <mat-tab class="tab">
+        <ng-template mat-tab-label>
+          <button mat-icon-button routerLink="/dashboard-component">Active task</button>
+        </ng-template>
+      </mat-tab>
+      <mat-tab class="tab">
+        <ng-template mat-tab-label>
+          <button mat-icon-button routerLink="/dashboard-component">Search</button>
+        </ng-template>
+      </mat-tab>
+      <mat-tab class="tab">
+        <ng-template mat-tab-label>
+          <button mat-icon-button routerLink="/dashboard-component">Information</button>
+        </ng-template>
+    </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
+
+</body>
+
