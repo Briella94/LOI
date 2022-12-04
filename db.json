@@ -1,11 +1,12 @@
 {
-  "inspections": [
+  "inspections":
+    [
       {
         "inspectionLocation": "Adres 20, 1234AB Dordrecht",
         "inspectionDate": "2022-12-04T18:25:43.511Z",
         "damages": [
           {
-            "damageType": "Oppervlakkige schades",
+            "damageType": "Oppervlakkige schade",
             "damageLocation": "Op de muur in de hal",
             "damageNew": "Ja",
             "damageDate": "2022-12-04T18:25:43.511Z",
@@ -39,7 +40,7 @@
             "modificationBy": "No",
             "modificationActionRequired": "Ja",
             "modificationRemark": "Ja"
-          }
+           }
       ]
     }
   ]
