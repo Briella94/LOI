@@ -17,6 +17,6 @@ export class CompletedInspectionsComponent implements OnInit {
       this.inspectionData = response;
     })
   }
+  displayedColumns: string[] = ['inspectionId', 'inspectionDate', 'inspectionLocation', 'details'];
 
-  displayedColumns: string[] = ['inspectionDate', 'inspectionLocation', 'details'];
 }
