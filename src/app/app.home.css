@@ -10,16 +10,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  overflow: hidden;
-}
-
 .spacer {
   flex: 1;
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -80,8 +76,11 @@ body {
   text-align: center;
 }
 
-.mat-tab-label {
-  width: 33%;
+::ng-deep .mat-tab-label {
+  color: white;
+  opacity: 100% !important;
+  width: 25%;
+  justify-content: initial;
 }
 
 /* Responsive media */

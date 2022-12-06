@@ -2,12 +2,12 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-completed-inspections',
-  templateUrl: './completed-inspections.component.html',
-  styleUrls: ['./completed-inspections.component.css']
+  selector: 'app-inspection-details',
+  templateUrl: './inspection-details.component.html',
+  styleUrls: ['./inspection-details.component.css']
 })
 
-export class CompletedInspectionsComponent implements OnInit {
+export class InspectionDetailsComponent implements OnInit {
   public inspectionData: any;
   public constructor(private http: HttpClient) {}
 
@@ -18,5 +18,5 @@ export class CompletedInspectionsComponent implements OnInit {
     })
   }
 
-  displayedColumns: string[] = ['inspectionDate', 'inspectionLocation', 'details'];
+  displayedColumns: string[] = ['detailsKeys', 'detailsValues'];
 }

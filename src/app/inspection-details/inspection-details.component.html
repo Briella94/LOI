@@ -1,0 +1,47 @@
+<head>
+    <link rel="stylesheet" href="inspection-details.component.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+
+<div class="content" role="main" *ngFor="let inspection of inspectionData.inspections">
+    <h1>Inspectiedetails inspectie #{{ inspection.inspectionId }}</h1>
+    <p>
+        Locatie: {{ inspection.inspectionLocation }}<br/>
+        Uitvoerdatum: {{ inspection.inspectionDate }}<br/>
+        <br/>
+    </p>
+    <h2>Schades:</h2>
+    <p *ngFor="let damage of inspection.damages">
+        Soort schade: {{ damage.damageType }}<br/>
+        Locatie: {{ damage.damageLocation }}<br/>
+        Nieuw of bestaand: {{ damage.damageNew }}<br/>
+        Datum ontstaan: {{ damage.damageDate }}<br/>
+        Actie vereist: {{ damage.damageActionRequired }}<br/>
+        Omschrijving: {{ damage.damageDescription }}<br/>
+    </p>
+    <h2>Achterstallig onderhoud:</h2>
+    <p *ngFor="let deferrence of inspection.deferrences">
+        Soort achterstallig onderhoud: {{ deferrence.deferrenceType }}<br/>
+        Locatie: {{ deferrence.deferrenceLocation }}<br/>
+        Actie vereist: {{ deferrence.deferrenceActionRequired }}<br/>
+        Kostenindicatie: {{ deferrence.deferrenceCostIndication }}<br/>
+    </p>
+    <h2>Technische installaties:</h2>
+    <p *ngFor="let installation of inspection.installations">
+        Soort installatie: {{ installation.installationType }}<br/>
+        Locatie: {{ installation.installationLocation }}<br/>
+        Reeds gemelde storingen: {{ installation.installationReports }}<br/>
+        Testprocedure: {{ installation.installationTestingProcedure }}<br/>
+        Goedgekeurd: {{ installation.installationApproved }}<br/>
+        Opmerkingen: {{ installation.installationRemark }}<br/>
+    </p>
+    <h2>Modificaties:</h2>
+    <p *ngFor="let modification of inspection.modifications">
+        Omschrijving modificatie: {{ modification.modificationType }}<br/>
+        Locatie: {{ modification.modificationLocation }}<br/>
+        Documentatie: {{ modification.modificationDocumentation }}<br/>
+        Uitgevoerd door: {{ modification.modificationBy }}<br/>
+        Vereiste actie: {{ modification.modificationActionRequired }}<br/>
+        Opmerkingen: {{ modification.modificationRemark }}<br/>
+    </p>
+</div>

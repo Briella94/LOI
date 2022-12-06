@@ -10,50 +10,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  overflow: hidden;
-}
-
-.spacer {
-  flex: 1;
-}
-
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  background-color: #0eb1a5;
-  color: white;
-  font-family: 'Electrolize', sans-serif;
-  font-size: 24px;
-}
-
-.header img {
-  margin: 0 16px;
-}
-
-.header .material-icons {
-  font-size: 33px;
-  margin-top: 5px;
-  margin-right: 25px;
-  overflow: visible;
-  color: white;
-}
-
-.header .settings-notifications-logo:hover {
-  color: rgb(19, 38, 41);
-}
-
 .content {
   display: flex;
   margin: 82px auto 32px;
   padding: 0 16px;
-  max-width: 960px;
   flex-direction: column;
   align-items: center;
 }
@@ -70,22 +30,6 @@ body {
   grid-row-gap: 20px;
 }
 
-.tabbar {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  max-height: 120px;
-  width: 100%;
-  background-color: #0eb1a5;
-}
-
-::ng-deep .mat-tab-label {
-    color: white;
-    opacity: 100%;
-    width: 25%;
-    justify-content: initial;
-  }
-
 /* Responsive media */
 @media only screen and (min-width: 320px) {
   .header img {
@@ -100,14 +44,6 @@ body {
   .card span {
     font-size: 80px;
   }
-
-  ::ng-deep .mat-tab-label {
-    padding-left: 15px;
-  }
-
-  ::ng-deep .mat-tab-label:last-child {
-    padding-left: 8px;
-  }
 }
 
 @media only screen and (min-width: 480px) {
@@ -118,14 +54,6 @@ body {
 
   .card span {
     font-size: 175px;
-  }
-
-  ::ng-deep .mat-tab-label {
-    padding-left: 50px;
-  }
-
-  ::ng-deep .mat-tab-label:last-child {
-    padding-left: 50px;
   }
 }
 
