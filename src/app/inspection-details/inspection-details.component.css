@@ -3,6 +3,9 @@
   font-size: 14px;
   color: #333;
   box-sizing: border-box;
+  margin-top: 82px;
+  margin-bottom: 82px;
+  max-width: 90vw;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

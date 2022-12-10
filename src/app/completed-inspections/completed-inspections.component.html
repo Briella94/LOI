@@ -16,7 +16,7 @@
     <!-- Inspection date -->
     <ng-container matColumnDef="inspectionDate">
       <th mat-header-cell *matHeaderCellDef> Uitvoerdatum </th>
-      <td mat-cell *matCellDef="let inspection"> {{inspection.inspectionDate | date:'longDate'}} </td>
+      <td mat-cell *matCellDef="let inspection"> {{inspection.inspectionDate | date:'d-MM-YYYY'}} </td>
     </ng-container>
   
     <!-- Inspection location -->
@@ -27,7 +27,7 @@
 
     <ng-container matColumnDef="details">
       <th mat-header-cell *matHeaderCellDef> </th>
-      <td mat-cell *matCellDef="let inspection"> <button mat-raised-button routerLink="/inspection-details-component">Details</button> </td>
+      <td mat-cell *matCellDef="let inspection"> <button mat-raised-button routerLink="/inspection-details-component" [queryParams]="{clickedId: inspection.inspectionId}">Details</button> </td>
     </ng-container>
   
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
