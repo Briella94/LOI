@@ -12,6 +12,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 
+import { ScheduledInspectionsComponent } from './scheduled-inspections/scheduled-inspections.component';
 import { CompletedInspectionsComponent } from './completed-inspections/completed-inspections.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { InspectionDetailsComponent } from './inspection-details/inspection-details.component';
@@ -20,6 +21,7 @@ import { InspectionDetailsComponent } from './inspection-details/inspection-deta
 @NgModule({
   declarations: [
     Home,
+    ScheduledInspectionsComponent,
     CompletedInspectionsComponent,
     DashboardComponent,
     InspectionDetailsComponent
