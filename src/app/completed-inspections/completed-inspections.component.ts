@@ -1,6 +1,5 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { IInspection } from '../models/dataModel.model';
-import data from '../../assets/db.json';
 
 @Component({
   selector: 'app-completed-inspections',
@@ -9,12 +8,15 @@ import data from '../../assets/db.json';
 })
 
 export class CompletedInspectionsComponent implements OnInit {
-  Inspections: IInspection[] = data;
-
-  constructor(){  }
-  
-  displayedColumns: string[] = ['inspectionId', 'inspectionDate', 'inspectionLocation', 'details'];
+  public inspectionData: any;
+  public constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
+    const url: string = 'https://my-json-server.typicode.com/Briella94/LOI/db';
+    this.http.get(url).subscribe((response) => {
+      this.inspectionData = response;
+    })
   }
+  displayedColumns: string[] = ['inspectionId', 'inspectionDate', 'inspectionLocation', 'details'];
+
 }

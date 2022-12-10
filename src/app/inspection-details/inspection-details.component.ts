@@ -1,7 +1,5 @@
-import { Component, OnInit, Pipe } from '@angular/core';
-import { IInspection } from '../models/dataModel.model';
-import { ActivatedRoute } from '@angular/router';
-import data from '../../assets/db.json';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-inspection-details',
@@ -10,17 +8,15 @@ import data from '../../assets/db.json';
 })
 
 export class InspectionDetailsComponent implements OnInit {
-  Inspections: IInspection[] = data;
-
-  constructor(private route: ActivatedRoute){  }
-  
-  displayedColumns: string[] = ['inspectionId', 'inspectionDate', 'inspectionLocation', 'details'];
+  public inspectionData: any;
+  public constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.route.queryParams
-      .subscribe(params => {
-        var providedId = params['clickedId'];
-        console.log(providedId);
-      })
+    const url: string = 'https://my-json-server.typicode.com/Briella94/LOI/db';
+    this.http.get(url).subscribe((response) => {
+      this.inspectionData = response;
+    })
   }
+
+  displayedColumns: string[] = ['detailsKeys', 'detailsValues'];
 }
