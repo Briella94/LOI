@@ -11,7 +11,6 @@ import data from '../../assets/db.json';
 
 export class InspectionDetailsComponent implements OnInit {
   Inspections: IInspection[] = data;
-  providedId: number = 0;
 
   constructor(private route: ActivatedRoute){  }
   
@@ -20,9 +19,8 @@ export class InspectionDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.route.queryParams
       .subscribe(params => {
-        this.providedId = params['clickedId'];
-        console.log(this.providedId);
+        var providedId = params['clickedId'];
+        console.log(providedId);
       })
-      
   }
 }
