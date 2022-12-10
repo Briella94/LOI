@@ -10,24 +10,24 @@
     <!-- Inspection id -->
     <ng-container matColumnDef="inspectionId">
       <th mat-header-cell *matHeaderCellDef> Id </th>
-      <td mat-cell *matCellDef="let inspection of Inspections"> {{ inspection.inspectionId }} </td>
+      <td mat-cell *matCellDef="let inspection"> {{ inspection.inspectionId }} </td>
     </ng-container>
 
     <!-- Inspection date -->
     <ng-container matColumnDef="inspectionDate">
       <th mat-header-cell *matHeaderCellDef> Uitvoerdatum </th>
-      <td mat-cell *matCellDef="let inspection of Inspections"> {{ inspection.inspectionDate | date:'d-MM-YYYY' }} </td>
+      <td mat-cell *matCellDef="let inspection"> {{ inspection.inspectionDate | date:'d-MM-YYYY' }} </td>
     </ng-container>
   
     <!-- Inspection location -->
     <ng-container matColumnDef="inspectionLocation">
       <th mat-header-cell *matHeaderCellDef> Locatie </th>
-      <td mat-cell *matCellDef="let inspection of Inspections"> {{ inspection.inspectionLocation }} </td>
+      <td mat-cell *matCellDef="let inspection"> {{ inspection.inspectionLocation }} </td>
     </ng-container>
 
     <ng-container matColumnDef="details">
       <th mat-header-cell *matHeaderCellDef> </th>
-      <td mat-cell *matCellDef="let inspection of Inspections"> <button mat-raised-button routerLink="/inspection-details-component" [queryParams]="{ clickedId: inspection.inspectionId}">Details</button> </td>
+      <td mat-cell *matCellDef="let inspection"> <button mat-raised-button routerLink="/inspection-details-component" [queryParams]="{ clickedId: inspection.inspectionId}">Details</button> </td>
     </ng-container>
   
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
