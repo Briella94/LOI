@@ -268,7 +268,7 @@
       "inspectionId": 7,
       "inspectionLocation": "Adres 46, 1234AB Nieuwegein",
       "inspectionDate": "2022-11-10T18:25:43.511Z",
-      "inspectionCompleted": false,
+      "inspectionCompleted": true,
       "damages": [
         {
           "damageType": "Oppervlakkige schade",
