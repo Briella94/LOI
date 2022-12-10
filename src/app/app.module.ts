@@ -17,7 +17,6 @@ import { CompletedInspectionsComponent } from './completed-inspections/completed
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { InspectionDetailsComponent } from './inspection-details/inspection-details.component';
 
-
 @NgModule({
   declarations: [
     Home,
