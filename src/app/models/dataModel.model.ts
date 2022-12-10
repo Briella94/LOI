@@ -3,6 +3,7 @@ export class Inspection {
       inspectionId: number;
       inspectionLocation: string;
       inspectionDate: string;
+      inspectionCompleted: boolean;
       damages: Array<{
         damageType: string;
         damageLocation: string;
