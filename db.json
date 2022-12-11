@@ -1,37 +1,37 @@
-
+[
     {
       "inspectionId": 1,
       "inspectionLocation": "Adres 20, 1234AB Dordrecht",
       "inspectionDate": "2022-12-04T18:25:43.511Z",
-      "inspectionCompleted": true,
+      "inspectionCompleted": true
       
     },
     {
       "inspectionId": 2,
       "inspectionLocation": "Adres 44, 1234AB Gorinchem",
       "inspectionDate": "2022-12-01T18:25:43.511Z",
-      "inspectionCompleted": true,
+      "inspectionCompleted": true
       
     },
     {
       "inspectionId": 3,
       "inspectionLocation": "Adres 33, 1234AB Leeuwarden",
       "inspectionDate": "2023-01-01T18:25:43.511Z",
-      "inspectionCompleted": true,
+      "inspectionCompleted": true
       
     },
     {
       "inspectionId": 4,
       "inspectionLocation": "Adres 46, 1234AB Nieuwegein",
       "inspectionDate": "2022-11-10T18:25:43.511Z",
-      "inspectionCompleted": false,
+      "inspectionCompleted": false
       
     },
     {
       "inspectionId": 5,
       "inspectionLocation": "Adres 85, 1234AB Utrecht",
       "inspectionDate": "2023-02-30T18:25:43.511Z",
-      "inspectionCompleted": true,
+      "inspectionCompleted": true
       
     }
-  
+]
