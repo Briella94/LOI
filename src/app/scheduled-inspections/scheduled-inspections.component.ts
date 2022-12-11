@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Inspection } from '../models/dataModel.model';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-scheduled-inspections',
@@ -7,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ScheduledInspectionsComponent implements OnInit {
-
-  constructor() { }
+  public inspectionData: Inspection[] = [];
+  public constructor(private inspectionService: DataService) {}
 
   ngOnInit(): void {
+    this.inspectionService
+      .getInspections()
+      .subscribe((inspections: Inspection[]) => (this.inspectionData = inspections));
   }
-
+  
+  displayedColumns: string[] = ['inspectionId', 'inspectionDate', 'inspectionLocation', 'details'];
 }
