@@ -15,8 +15,6 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatRadioModule } from '@angular/material/radio';
-import { FormsModule }   from '@angular/forms';
-
 
 import { ScheduledInspectionsComponent } from './scheduled-inspections/scheduled-inspections.component';
 import { CompletedInspectionsComponent } from './completed-inspections/completed-inspections.component';
@@ -24,6 +22,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { InspectionDetailsComponent } from './inspection-details/inspection-details.component';
 import { KnowledgeBaseComponent } from './knowledge-base/knowledge-base.component';
 import { ApplicationSettingsComponent } from './application-settings/application-settings.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +32,8 @@ import { ApplicationSettingsComponent } from './application-settings/application
     DashboardComponent,
     InspectionDetailsComponent,
     KnowledgeBaseComponent,
-    ApplicationSettingsComponent
+    ApplicationSettingsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -49,8 +49,7 @@ import { ApplicationSettingsComponent } from './application-settings/application
     MatSlideToggleModule,
     MatInputModule,
     MatSnackBarModule,
-    MatRadioModule,
-    FormsModule
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [Home]
