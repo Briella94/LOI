@@ -7,18 +7,16 @@ import { InspectionDetailsComponent } from './inspection-details/inspection-deta
 import { KnowledgeBaseComponent } from './knowledge-base/knowledge-base.component';
 import { ApplicationSettingsComponent } from './application-settings/application-settings.component';
 import { LoginComponent } from './login/login.component';
-import { Home } from './app.home';
 
 const routes: Routes = [
   { path: 'login-component', component: LoginComponent},
-  { path: 'home-component', component: Home},
   { path: 'dashboard-component', component: DashboardComponent },
   { path: 'scheduled-inspections-component', component: ScheduledInspectionsComponent },
   { path: 'completed-inspections-component', component: CompletedInspectionsComponent },
   { path: 'inspection-details-component', component: InspectionDetailsComponent },
   { path: 'knowledge-base-component', component: KnowledgeBaseComponent },
   { path: 'application-settings-component', component: ApplicationSettingsComponent },
-  { path: '', redirectTo: '/dashboard-component', pathMatch: 'full' }, // redirect to 'dashboard-component'
+  { path: '', redirectTo: '/login-component', pathMatch: 'full' }, // redirect to 'login-component'
 ];
 
 @NgModule({
