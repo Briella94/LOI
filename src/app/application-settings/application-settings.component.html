@@ -1,24 +1,24 @@
 <div class="content" role="main">
-    <form #form="ngForm">
+    <form>
         <table>
         <tr><td colspan="2"><h1>Applicatieinstellingen</h1></td></tr>
             <tr>
                 <td>Offline gebruiken:</td>
-                <td><mat-slide-toggle name="offlineusage"></mat-slide-toggle></td>
+                <td><mat-slide-toggle id="offlineusage"></mat-slide-toggle></td>
             </tr>
             <tr>
                 <td>Foto's comprimeren:</td>
-                <td><mat-slide-toggle name="compressphotos"></mat-slide-toggle></td>
+                <td><mat-slide-toggle id="compressphotos"></mat-slide-toggle></td>
             </tr>
         
             <tr><td colspan="2"><h1><br/>Notificatieinstellingen</h1></td></tr>
             <tr>
                 <td>Nieuwe geplande inspecties:</td>
-                <td><mat-slide-toggle name="notifnewinspection"></mat-slide-toggle></td>
+                <td><mat-slide-toggle id="notifnewinspection"></mat-slide-toggle></td>
             </tr>
             <tr><td colspan="2"><br/><label>Inspectieoverzicht e-mail:</label></td></tr>
             <tr>
-                <mat-radio-group name="notifemail">
+                <mat-radio-group id="notifemail">
                     <mat-radio-button value="1">Nooit</mat-radio-button><br/>
                     <mat-radio-button value="2">Dagelijks</mat-radio-button><br/>
                     <mat-radio-button value="3">Wekelijks</mat-radio-button>
@@ -27,10 +27,10 @@
 
             <tr><td colspan="2"><h1><br/>Accountinstellingen</h1></td></tr>
             <tr>
-                <td colspan="2"><mat-form-field name="newpassword"><mat-label>Nieuw wachtwoord</mat-label><input matInput type="text"></mat-form-field></td>
+                <td colspan="2"><mat-form-field id="newpassword"><mat-label>Nieuw wachtwoord</mat-label><input matInput type="text"></mat-form-field></td>
             </tr>
             <tr>
-                <td colspan="2"><mat-form-field name="newpasswordrepeat"><mat-label>Nieuw wachtwoord herhalen</mat-label><input matInput type="text"></mat-form-field></td>
+                <td colspan="2"><mat-form-field id="newpasswordrepeat"><mat-label>Nieuw wachtwoord herhalen</mat-label><input matInput type="text"></mat-form-field></td>
             </tr>
         </table>
     

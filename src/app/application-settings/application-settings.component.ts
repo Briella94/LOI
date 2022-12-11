@@ -15,5 +15,4 @@ export class ApplicationSettingsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
