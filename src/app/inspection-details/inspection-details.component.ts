@@ -18,13 +18,11 @@ export class InspectionDetailsComponent implements OnInit {
     this.inspectionService
       .getInspections()
       .subscribe((inspections: Inspection[]) => (this.inspectionData = inspections));
-      console.log(this.inspectionData)
 
     this.route.queryParams
     .subscribe(params => {
       let clickedId = params['clickedId'];
       this.providedId = clickedId;
-      console.log(clickedId);
     })
   };
 }

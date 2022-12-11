@@ -16,7 +16,6 @@ export class CompletedInspectionsComponent implements OnInit {
     this.inspectionService
       .getInspections()
       .subscribe((inspections: Inspection[]) => (this.inspectionData = inspections));
-      console.log(this.inspectionData)
   }
   
   displayedColumns: string[] = ['inspectionId', 'inspectionDate', 'inspectionLocation', 'details'];
