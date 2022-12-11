@@ -24,13 +24,14 @@ export class LoginComponent {
 
   public onSubmit(): void {
   this.loginValid = true;
-  let email = "nathaliefijan@loi.com";
+  let email = "nathaliefijan@loitest.com";
   let password = "Welkom2022-01"
   
     if (this.username == email && password == this.password) {
       localStorage.setItem("is_loggedin", "yes");
       this._router.navigateByUrl(this.returnUrl);
     } else {
+      this.loginValid = false;
       console.log("Invalid username and password");
     }
   }
