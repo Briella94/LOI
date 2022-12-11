@@ -11,6 +11,6 @@ export class DataService {
   
   getInspections(): Observable<Inspection[]> {
     return this.http
-    .get<Inspection[]>('https://raw.githubusercontent.com/Briella94/LOI/main/db.json')
+    .get<Inspection[]>('https://api.npoint.io/3818fd3df9a8109c8399')
   }
 }

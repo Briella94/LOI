@@ -17,14 +17,18 @@
             Nieuw of bestaand: {{ damage.damageNew }}<br/>
             Datum ontstaan: {{ damage.damageDate | date:'d-MM-YYYY' }}<br/>
             Actie vereist: {{ damage.damageActionRequired }}<br/>
-            Omschrijving: {{ damage.damageDescription }}<br/><br/>
+            Omschrijving: {{ damage.damageDescription }}<br/>
+            Foto:<br/> <img src={{damage.damagePhoto}} width="300">
+            <br/><br/>
         </div>
         <h2>Achterstallig onderhoud:</h2>
         <div *ngFor="let deferrence of inspection.deferrences">
             Soort achterstallig onderhoud: {{ deferrence.deferrenceType }}<br/>
             Locatie: {{ deferrence.deferrenceLocation }}<br/>
             Actie vereist: {{ deferrence.deferrenceActionRequired }}<br/>
-            Kostenindicatie: {{ deferrence.deferrenceCostIndication }}<br/><br/>
+            Kostenindicatie: {{ deferrence.deferrenceCostIndication }}<br/>
+            Foto:<br/> <img src={{deferrence.deferrencePhoto}} width="300">
+            <br/><br/>
         </div>
         <h2>Technische installaties:</h2>
         <div *ngFor="let installation of inspection.installations">
@@ -33,7 +37,9 @@
             Reeds gemelde storingen: {{ installation.installationReports }}<br/>
             Testprocedure: {{ installation.installationTestingProcedure }}<br/>
             Goedgekeurd: {{ installation.installationApproved }}<br/>
-            Opmerkingen: {{ installation.installationRemark }}<br/><br/>
+            Opmerkingen: {{ installation.installationRemark }}<br/>
+            Foto:<br/> <img src={{installation.installationPhoto}} width="300">
+            <br/><br/>
         </div>
         <h2>Modificaties:</h2>
         <div *ngFor="let modification of inspection.modifications">
@@ -42,7 +48,9 @@
             Documentatie: {{ modification.modificationDocumentation }}<br/>
             Uitgevoerd door: {{ modification.modificationBy }}<br/>
             Vereiste actie: {{ modification.modificationActionRequired }}<br/>
-            Opmerkingen: {{ modification.modificationRemark }}<br/><br/>
+            Opmerkingen: {{ modification.modificationRemark }}<br/>
+            Foto:<br/> <img src={{modification.modificationPhoto}} width="300">
+            <br/><br/>
         </div>
     </div>
 </ng-container>

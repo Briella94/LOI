@@ -6,32 +6,36 @@ export class Inspection {
   damages: Array<{
     damageType: string;
     damageLocation: string;
-    damageNew: string;
+    damageNew: boolean;
     damageDate: string;
-    damageActionRequired: string;
+    damageActionRequired: boolean;
     damageDescription: string;
+    damagePhoto: string;
   }>
   deferrences: Array<{
     deferrenceType: string;
     deferrenceLocation: string;
-    deferrenceActionRequired: string;
-    deferrenceCostIndication: string;
+    deferrenceActionRequired: boolean;
+    deferrenceCostIndication: number;
+    deferrencePhoto: string;
   }>
   installations: Array<{
     installationType: string;
     installationLocation: string;
     installationReports: string;
     installationTestingProcedure: string;
-    installationApproved: string;
+    installationApproved: boolean;
     installationRemark: string;
+    installationPhoto: string;
   }>
   modifications: Array<{
     modificationDescription: string;
     modificationLocation: string;
     modificationDocumentation: string;
     modificationBy: string;
-    modificationActionRequired: string;
+    modificationActionRequired: boolean;
     modificationRemark: string;
+    modificationPhoto: string;
   }>
 
   constructor(
@@ -42,32 +46,36 @@ export class Inspection {
     damages: Array<{
       damageType: string;
       damageLocation: string;
-      damageNew: string;
+      damageNew: boolean;
       damageDate: string;
-      damageActionRequired: string;
+      damageActionRequired: boolean;
       damageDescription: string;
+      damagePhoto: string;
     }>,
     deferrences: Array<{
       deferrenceType: string;
       deferrenceLocation: string;
-      deferrenceActionRequired: string;
-      deferrenceCostIndication: string;
+      deferrenceActionRequired: boolean;
+      deferrenceCostIndication: number;
+      deferrencePhoto: string;
     }>,
     installations: Array<{
       installationType: string;
       installationLocation: string;
       installationReports: string;
       installationTestingProcedure: string;
-      installationApproved: string;
+      installationApproved: boolean;
       installationRemark: string;
+      installationPhoto: string;
     }>,
     modifications: Array<{
       modificationDescription: string;
       modificationLocation: string;
       modificationDocumentation: string;
       modificationBy: string;
-      modificationActionRequired: string;
+      modificationActionRequired: boolean;
       modificationRemark: string;
+      modificationPhoto: string;
     }>
   ) {
     this.inspectionId = inspectionId;

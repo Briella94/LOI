@@ -28,7 +28,7 @@
     <!-- Details button -->
     <ng-container matColumnDef="details">
       <th mat-header-cell *matHeaderCellDef> </th>
-      <td mat-cell *matCellDef="let inspection"> <button mat-raised-button routerLink="/inspection-details-component" [queryParams]="{clickedId: inspection.inspectionId}">Details</button> </td>
+      <td mat-cell *matCellDef="let inspection"> <button mat-raised-button>Inspectie uitvoeren</button> </td>
     </ng-container>
   
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
