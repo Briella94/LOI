@@ -15,6 +15,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatCardModule } from '@angular/material/card';
+import { FormsModule }   from '@angular/forms';
 
 import { ScheduledInspectionsComponent } from './scheduled-inspections/scheduled-inspections.component';
 import { CompletedInspectionsComponent } from './completed-inspections/completed-inspections.component';
@@ -49,7 +51,9 @@ import { LoginComponent } from './login/login.component';
     MatSlideToggleModule,
     MatInputModule,
     MatSnackBarModule,
-    MatRadioModule
+    MatRadioModule,
+    MatCardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [Home]

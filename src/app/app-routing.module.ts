@@ -6,8 +6,10 @@ import { CompletedInspectionsComponent } from './completed-inspections/completed
 import { InspectionDetailsComponent } from './inspection-details/inspection-details.component';
 import { KnowledgeBaseComponent } from './knowledge-base/knowledge-base.component';
 import { ApplicationSettingsComponent } from './application-settings/application-settings.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
+  { path: 'login-component', component: LoginComponent},
   { path: 'dashboard-component', component: DashboardComponent },
   { path: 'scheduled-inspections-component', component: ScheduledInspectionsComponent },
   { path: 'completed-inspections-component', component: CompletedInspectionsComponent },
