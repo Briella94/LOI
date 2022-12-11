@@ -45,8 +45,3 @@
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
   color: #0eb1a5 !important;
 }
-
-::ng-deep .mat-snack-bar-container {
-  min-width: 0px !important;
-  width: auto;
-}

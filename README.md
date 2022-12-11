@@ -2,27 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
-## Development server
+## Toelichting bij deze eindopdracht
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This prototype application was created for RealEstateCare. Because the assignment was provided in Dutch and the application is aimed at Dutch users, the codebase was written in English and the UI is in Dutch.
 
-## Code scaffolding
+The prototype application consists of a dashboard which has the following available functionalities:
+1. An overview of planned inspections ("Gepland")
+2. An overview of completed inspections ("Afgerond")
+3. A knowledge base ("Kennisbank")
+4. A settings page ("Instellingen")
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Clicking the "Details" button in the overview of either the planned or completed inspections will open a page showing the full details of that inspection.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-"# LOI" 
+Because the requirements of the prototype did not include a functioning settings page, filled knowledge base or functionality of the bottom tab bar buttons these functionalities have not (yet) been developed. All buttons in the bottom tab bar currently lead back to the Dashboard. The settings can be saved but do not alter the application in any way.
