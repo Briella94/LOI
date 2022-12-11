@@ -1,5 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Inspection } from '../models/dataModel.model';
+import { DataService } from '../services/data.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -9,15 +10,15 @@ import { ActivatedRoute } from '@angular/router';
 })
 
 export class InspectionDetailsComponent implements OnInit {
-  public providedId: number = 0;
-  public inspectionData: any;
-  public constructor(private http: HttpClient, private route: ActivatedRoute) {}
+  providedId: number = 0;
+  public inspectionData: Inspection[] = [];
+  public constructor(private inspectionService: DataService, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    const url: string = 'https://my-json-server.typicode.com/Briella94/LOI/db';
-    this.http.get(url).subscribe((response) => {
-      this.inspectionData = response;
-    })
+    this.inspectionService
+      .getInspections()
+      .subscribe((inspections: Inspection[]) => (this.inspectionData = inspections));
+      console.log(this.inspectionData)
 
     this.route.queryParams
     .subscribe(params => {
@@ -26,5 +27,4 @@ export class InspectionDetailsComponent implements OnInit {
       console.log(clickedId);
     })
   };
-
 }
