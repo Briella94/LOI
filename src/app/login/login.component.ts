@@ -27,11 +27,11 @@ export class LoginComponent {
   let email = "nathaliefijan@loi.com";
   let password = "Welkom2022-01"
   
-  if (this.username == email && password == this.password) {
-    localStorage.setItem("is_loggedin", "yes");
-    this._router.navigateByUrl(this.returnUrl);
-  } else {
-    console.log("Invalid username and password");
-  }
+    if (this.username == email && password == this.password) {
+      localStorage.setItem("is_loggedin", "yes");
+      this._router.navigateByUrl(this.returnUrl);
+    } else {
+      console.log("Invalid username and password");
+    }
   }
  }
