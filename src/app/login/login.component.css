@@ -24,3 +24,15 @@
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
     color: #0eb1a5 !important;
 }
+
+::ng-deep #tabbar {
+    display: none;
+}
+
+::ng-deep #settingsicon {
+    display: none;
+}
+  
+::ng-deep #notificationsicon {
+    display: none;
+}

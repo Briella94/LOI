@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -34,4 +34,4 @@ export class LoginComponent {
       console.log("Invalid username and password");
     }
   }
- }
+}
