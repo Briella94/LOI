@@ -1,5 +1,4 @@
-{
-  "inspections": [
+[
     {
       "inspectionId": 1,
       "inspectionLocation": "Adres 20, 1234AB Dordrecht",
@@ -309,4 +308,3 @@
       ]
     }
   ]
-}
