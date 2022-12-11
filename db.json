@@ -1,37 +1,312 @@
-[
+{
+  "inspections": [
     {
       "inspectionId": 1,
       "inspectionLocation": "Adres 20, 1234AB Dordrecht",
       "inspectionDate": "2022-12-04T18:25:43.511Z",
-      "inspectionCompleted": true
-      
+      "inspectionCompleted": true,
+      "damages": [
+        {
+          "damageType": "Oppervlakkige schade",
+          "damageLocation": "Op de muur in de hal",
+          "damageNew": "Ja",
+          "damageDate": "2022-12-04T18:25:43.511Z",
+          "damageActionRequired": "No",
+          "damageDescription": "N.v.t."
+        }
+      ],
+      "deferrences": [
+        {
+          "deferrenceType": "Scheur in de wand",
+          "deferrenceLocation": "Op het balkon",
+          "deferrenceActionRequired": "No",
+          "deferrenceCostIndication": "1.000"
+        }
+      ],
+      "installations": [
+        {
+          "installationType": "Grote installatie",
+          "installationLocation": "In de kleine kamer",
+          "installationReports": "No",
+          "installationTestingProcedure": "",
+          "installationApproved": "Ja",
+          "installationRemark": "Niks bijzonders"
+        }
+      ],
+      "modifications": [
+        {
+          "modificationDescription": "Muur geschilderd",
+          "modificationLocation": "Woonkamer",
+          "modificationDocumentation": "",
+          "modificationBy": "Bewoner",
+          "modificationActionRequired": "Ja",
+          "modificationRemark": "De woning mag niet geschilderd worden"
+        }
+      ]
     },
     {
       "inspectionId": 2,
       "inspectionLocation": "Adres 44, 1234AB Gorinchem",
       "inspectionDate": "2022-12-01T18:25:43.511Z",
-      "inspectionCompleted": true
-      
+      "inspectionCompleted": true,
+      "damages": [
+        {
+          "damageType": "Oppervlakkige schade",
+          "damageLocation": "Op de muur in de hal",
+          "damageNew": "Ja",
+          "damageDate": "2022-12-04T18:25:43.511Z",
+          "damageActionRequired": "No",
+          "damageDescription": "N.v.t."
+        }
+      ],
+      "deferrences": [
+        {
+          "deferrenceType": "Oppervlakkige schade",
+          "deferrenceLocation": "Op de muur in de hal",
+          "deferrenceActionRequired": "No",
+          "deferrenceCostIndication": "10.000"
+        }
+      ],
+      "installations": [
+        {
+          "installationType": "Kleine installatie",
+          "installationLocation": "Op de muur in de hal",
+          "installationReports": "No",
+          "installationTestingProcedure": "10.000",
+          "installationApproved": "Ja",
+          "installationRemark": "Niks bijzonders"
+        }
+      ],
+      "modifications": [
+        {
+          "modificationDescription": "Niks bijzonders",
+          "modificationLocation": "Op de muur in de hal",
+          "modificationDocumentation": "10.000",
+          "modificationBy": "No",
+          "modificationActionRequired": "Ja",
+          "modificationRemark": "Ja"
+        }
+      ]
     },
     {
       "inspectionId": 3,
       "inspectionLocation": "Adres 33, 1234AB Leeuwarden",
       "inspectionDate": "2023-01-01T18:25:43.511Z",
-      "inspectionCompleted": true
-      
+      "inspectionCompleted": true,
+      "damages": [
+        {
+          "damageType": "Oppervlakkige schade",
+          "damageLocation": "Op de muur in de hal",
+          "damageNew": "Ja",
+          "damageDate": "2022-12-04T18:25:43.511Z",
+          "damageActionRequired": "No",
+          "damageDescription": "N.v.t."
+        }
+      ],
+      "deferrences": [
+        {
+          "deferrenceType": "Oppervlakkige schade",
+          "deferrenceLocation": "Op de muur in de hal",
+          "deferrenceActionRequired": "No",
+          "deferrenceCostIndication": "10.000"
+        }
+      ],
+      "installations": [
+        {
+          "installationType": "Oppervlakkige schade",
+          "installationLocation": "Op de muur in de hal",
+          "installationReports": "No",
+          "installationTestingProcedure": "10.000",
+          "installationApproved": "Ja",
+          "installationRemark": "Niks bijzonders"
+        }
+      ],
+      "modifications": [
+        {
+          "modificationDescription": "Niks bijzonders",
+          "modificationLocation": "Op de muur in de hal",
+          "modificationDocumentation": "10.000",
+          "modificationBy": "No",
+          "modificationActionRequired": "Ja",
+          "modificationRemark": "Ja"
+        }
+      ]
     },
     {
       "inspectionId": 4,
       "inspectionLocation": "Adres 46, 1234AB Nieuwegein",
       "inspectionDate": "2022-11-10T18:25:43.511Z",
-      "inspectionCompleted": false
-      
+      "inspectionCompleted": false,
+      "damages": [
+        {
+          "damageType": "Oppervlakkige schade",
+          "damageLocation": "Op de muur in de hal",
+          "damageNew": "Ja",
+          "damageDate": "2022-12-04T18:25:43.511Z",
+          "damageActionRequired": "No",
+          "damageDescription": "N.v.t."
+        }
+      ],
+      "deferrences": [
+        {
+          "deferrenceType": "Oppervlakkige schade",
+          "deferrenceLocation": "Op de muur in de hal",
+          "deferrenceActionRequired": "No",
+          "deferrenceCostIndication": "10.000"
+        }
+      ],
+      "installations": [
+        {
+          "installationType": "Oppervlakkige schade",
+          "installationLocation": "Op de muur in de hal",
+          "installationReports": "No",
+          "installationTestingProcedure": "10.000",
+          "installationApproved": "Ja",
+          "installationRemark": "Niks bijzonders"
+        }
+      ],
+      "modifications": [
+        {
+          "modificationDescription": "Niks bijzonders",
+          "modificationLocation": "Op de muur in de hal",
+          "modificationDocumentation": "10.000",
+          "modificationBy": "No",
+          "modificationActionRequired": "Ja",
+          "modificationRemark": "Ja"
+        }
+      ]
     },
     {
       "inspectionId": 5,
       "inspectionLocation": "Adres 85, 1234AB Utrecht",
       "inspectionDate": "2023-02-30T18:25:43.511Z",
-      "inspectionCompleted": true
-      
+      "inspectionCompleted": true,
+      "damages": [
+        {
+          "damageType": "Oppervlakkige schade",
+          "damageLocation": "Op de muur in de hal",
+          "damageNew": "Ja",
+          "damageDate": "2022-12-04T18:25:43.511Z",
+          "damageActionRequired": "No",
+          "damageDescription": "N.v.t."
+        }
+      ],
+      "deferrences": [
+        {
+          "deferrenceType": "Oppervlakkige schade",
+          "deferrenceLocation": "Op de muur in de hal",
+          "deferrenceActionRequired": "No",
+          "deferrenceCostIndication": "10.000"
+        }
+      ],
+      "installations": [
+        {
+          "installationType": "Oppervlakkige schade",
+          "installationLocation": "Op de muur in de hal",
+          "installationReports": "No",
+          "installationTestingProcedure": "10.000",
+          "installationApproved": "Ja",
+          "installationRemark": "Niks bijzonders"
+        }
+      ],
+      "modifications": [
+        {
+          "modificationDescription": "Niks bijzonders",
+          "modificationLocation": "Op de muur in de hal",
+          "modificationDocumentation": "10.000",
+          "modificationBy": "No",
+          "modificationActionRequired": "Ja",
+          "modificationRemark": "Ja"
+        }
+      ]
+    },
+    {
+      "inspectionId": 6,
+      "inspectionLocation": "Adres 85, 1234AB Utrecht",
+      "inspectionDate": "2023-02-30T18:25:43.511Z",
+      "inspectionCompleted": false,
+      "damages": [
+        {
+          "damageType": "Oppervlakkige schade",
+          "damageLocation": "Op de muur in de hal",
+          "damageNew": "Ja",
+          "damageDate": "2022-12-04T18:25:43.511Z",
+          "damageActionRequired": "No",
+          "damageDescription": "N.v.t."
+        }
+      ],
+      "deferrences": [
+        {
+          "deferrenceType": "Oppervlakkige schade",
+          "deferrenceLocation": "Op de muur in de hal",
+          "deferrenceActionRequired": "No",
+          "deferrenceCostIndication": "10.000"
+        }
+      ],
+      "installations": [
+        {
+          "installationType": "Oppervlakkige schade",
+          "installationLocation": "Op de muur in de hal",
+          "installationReports": "No",
+          "installationTestingProcedure": "10.000",
+          "installationApproved": "Ja",
+          "installationRemark": "Niks bijzonders"
+        }
+      ],
+      "modifications": [
+        {
+          "modificationDescription": "Niks bijzonders",
+          "modificationLocation": "Op de muur in de hal",
+          "modificationDocumentation": "10.000",
+          "modificationBy": "No",
+          "modificationActionRequired": "Ja",
+          "modificationRemark": "Ja"
+        }
+      ]
+    },
+    {
+      "inspectionId": 7,
+      "inspectionLocation": "Adres 46, 1234AB Nieuwegein",
+      "inspectionDate": "2022-11-10T18:25:43.511Z",
+      "inspectionCompleted": true,
+      "damages": [
+        {
+          "damageType": "Oppervlakkige schade",
+          "damageLocation": "Op de muur in de hal",
+          "damageNew": "Ja",
+          "damageDate": "2022-12-04T18:25:43.511Z",
+          "damageActionRequired": "No",
+          "damageDescription": "N.v.t."
+        }
+      ],
+      "deferrences": [
+        {
+          "deferrenceType": "Oppervlakkige schade",
+          "deferrenceLocation": "Op de muur in de hal",
+          "deferrenceActionRequired": "No",
+          "deferrenceCostIndication": "10.000"
+        }
+      ],
+      "installations": [
+        {
+          "installationType": "Oppervlakkige schade",
+          "installationLocation": "Op de muur in de hal",
+          "installationReports": "No",
+          "installationTestingProcedure": "10.000",
+          "installationApproved": "Ja",
+          "installationRemark": "Niks bijzonders"
+        }
+      ],
+      "modifications": [
+        {
+          "modificationDescription": "Niks bijzonders",
+          "modificationLocation": "Op de muur in de hal",
+          "modificationDocumentation": "10.000",
+          "modificationBy": "No",
+          "modificationActionRequired": "Ja",
+          "modificationRemark": "Ja"
+        }
+      ]
     }
-]
+  ]
+}
