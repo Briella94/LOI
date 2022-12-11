@@ -4,40 +4,39 @@
 </head>
 
 <div class="content" role="main">
-    <h1>Uitgevoerde inspecties</h1>
+  <h1>Uitgevoerde inspecties</h1>
 
-<table mat-table [dataSource]="inspectionData" class="mat-elevation-z8">
-  <!-- Inspection id -->
-    <ng-container matColumnDef="inspectionId">
-      <th mat-header-cell *matHeaderCellDef> Id </th>
-      <td mat-cell *matCellDef="let inspection"> {{ inspection.inspectionId }} </td>
-    </ng-container>
+  <table mat-table [dataSource]="inspectionData" class="mat-elevation-z8">
+    <!-- Inspection id -->
+      <ng-container matColumnDef="inspectionId">
+        <th mat-header-cell *matHeaderCellDef> Id </th>
+        <td mat-cell *matCellDef="let inspection"> {{ inspection.inspectionId }} </td>
+      </ng-container>
 
-    <!--Inspection date -->
-    <ng-container matColumnDef="inspectionDate">
-      <th mat-header-cell *matHeaderCellDef> Uitvoerdatum </th>
-      <td mat-cell *matCellDef="let inspection"> {{ inspection.inspectionDate | date:'d-MM-YYYY' }} </td>
-    </ng-container>
+      <!--Inspection date -->
+      <ng-container matColumnDef="inspectionDate">
+        <th mat-header-cell *matHeaderCellDef> Uitvoerdatum </th>
+        <td mat-cell *matCellDef="let inspection"> {{ inspection.inspectionDate | date:'d-MM-YYYY' }} </td>
+      </ng-container>
   
-    <!-- Inspection location -->
-    <ng-container matColumnDef="inspectionLocation">
-      <th mat-header-cell *matHeaderCellDef> Locatie </th>
-      <td mat-cell *matCellDef="let inspection"> {{ inspection.inspectionLocation }} </td>
-    </ng-container>
+      <!-- Inspection location -->
+      <ng-container matColumnDef="inspectionLocation">
+        <th mat-header-cell *matHeaderCellDef> Locatie </th>
+        <td mat-cell *matCellDef="let inspection"> {{ inspection.inspectionLocation }} </td>
+      </ng-container>
 
-    <!-- Details button -->
-    <ng-container matColumnDef="details">
-      <th mat-header-cell *matHeaderCellDef> </th>
-      <td mat-cell *matCellDef="let inspection"> <button mat-raised-button routerLink="/inspection-details-component" [queryParams]="{clickedId: inspection.inspectionId}">Details</button> </td>
-    </ng-container>
+      <!-- Details button -->
+      <ng-container matColumnDef="details">
+        <th mat-header-cell *matHeaderCellDef> </th>
+        <td mat-cell *matCellDef="let inspection"> <button mat-raised-button routerLink="/inspection-details-component" [queryParams]="{clickedId: inspection.inspectionId}">Details</button> </td>
+      </ng-container>
   
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;" [hidden]="row.inspectionCompleted !== true"></tr>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" [hidden]="row.inspectionCompleted !== true"></tr>
 
-</table>
-
-<br/>
-<br/>
-<button mat-raised-button routerLink="/dashboard-component">Terug naar dashboard</button>
-
+  </table>
+  
+  <br/>
+  <br/>
+  <button mat-raised-button routerLink="/dashboard-component">Terug naar dashboard</button>
 </div>

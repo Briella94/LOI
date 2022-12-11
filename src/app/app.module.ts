@@ -16,6 +16,8 @@ import { ScheduledInspectionsComponent } from './scheduled-inspections/scheduled
 import { CompletedInspectionsComponent } from './completed-inspections/completed-inspections.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { InspectionDetailsComponent } from './inspection-details/inspection-details.component';
+import { KnowledgeBaseComponent } from './knowledge-base/knowledge-base.component';
+import { ApplicationSettingsComponent } from './application-settings/application-settings.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { InspectionDetailsComponent } from './inspection-details/inspection-deta
     ScheduledInspectionsComponent,
     CompletedInspectionsComponent,
     DashboardComponent,
-    InspectionDetailsComponent
+    InspectionDetailsComponent,
+    KnowledgeBaseComponent,
+    ApplicationSettingsComponent
   ],
   imports: [
     BrowserModule,

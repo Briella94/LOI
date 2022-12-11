@@ -4,12 +4,16 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ScheduledInspectionsComponent } from './scheduled-inspections/scheduled-inspections.component';
 import { CompletedInspectionsComponent } from './completed-inspections/completed-inspections.component';
 import { InspectionDetailsComponent } from './inspection-details/inspection-details.component';
+import { KnowledgeBaseComponent } from './knowledge-base/knowledge-base.component';
+import { ApplicationSettingsComponent } from './application-settings/application-settings.component';
 
 const routes: Routes = [
   { path: 'dashboard-component', component: DashboardComponent },
   { path: 'scheduled-inspections-component', component: ScheduledInspectionsComponent },
   { path: 'completed-inspections-component', component: CompletedInspectionsComponent },
   { path: 'inspection-details-component', component: InspectionDetailsComponent },
+  { path: 'knowledge-base-component', component: KnowledgeBaseComponent },
+  { path: 'application-settings-component', component: ApplicationSettingsComponent },
   { path: '',   redirectTo: '/dashboard-component', pathMatch: 'full' }, // redirect to 'dashboard-component'
 ];
 
